@@ -1,31 +1,76 @@
 package com.amitdusane.state;
 
-public class Kid {
-	int age;
-	private KidState kidState = null;
-	
+/**
+ * The Class Kid.
+ */
+public class Kid
+{
+    
+    /** The age. */
+    private int age;
+    
+    /** The kid state. */
+    private KidState kidState = null;
 
-	public Kid(int age) {
-		setAge(age);		
-	}
+    /**
+     * Instantiates a new kid.
+     *
+     * @param age the age
+     */
+    public Kid(int age)
+    {
+        setAge(age);
+    }
 
-	public int getAge() {
-		return age;
-	}
+    /**
+     * Gets the age.
+     *
+     * @return the age
+     */
+    public int getAge()
+    {
+        return age;
+    }
 
-	public void setAge(int age) {
-		this.age = age;
-		if(age == 1 ) setKidState(new FirstYearKid());
-		if(age == 2 ) setKidState(new SecondYearKid());
-		if(age == 3 ) setKidState(new ThirdYearKid());
-		if(age > 3 ) setKidState(new AnyYearKid());
-	}
+    /**
+     * Sets the age.
+     *
+     * @param age the new age
+     */
+    public void setAge(int age)
+    {
+        this.age = age;
+        if (age == 1) {
+            setKidState(new FirstYearKid());
+        }
+        if (age == 2) {
+            setKidState(new SecondYearKid());
+        }
+        if (age == 3) {
+            setKidState(new ThirdYearKid());
+        }
+        if (age > 3) {
+            setKidState(new AnyYearKid());
+        }
+    }
 
-	public KidState getKidState() {
-		return kidState;
-	}
+    /**
+     * Gets the kid state.
+     *
+     * @return the kid state
+     */
+    public KidState getKidState()
+    {
+        return kidState;
+    }
 
-	public void setKidState(KidState kidState) {
-		this.kidState = kidState;
-	}
+    /**
+     * Sets the kid state.
+     *
+     * @param kidState the new kid state
+     */
+    public void setKidState(KidState kidState)
+    {
+        this.kidState = kidState;
+    }
 }

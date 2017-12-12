@@ -1,7 +1,14 @@
 package com.amitdusane.state;
 
-public interface KidState {
-	
-	public void eat();
+/**
+ * The Interface KidState.
+ */
+public interface KidState
+{
+
+    /**
+     * Eat.
+     */
+    public void eat();
 
 }

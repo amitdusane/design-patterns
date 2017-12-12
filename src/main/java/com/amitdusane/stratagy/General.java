@@ -1,23 +1,45 @@
 package com.amitdusane.stratagy;
 
-public class General extends GeneralStratagy {
+/**
+ * The Class General.
+ */
+public class General extends GeneralStrategy
+{
 
-	@Override
-	public void dothis() {
-		System.out.println("Do this executed");
+    /*
+     * (non-Javadoc)
+     * 
+     * @see com.amitdusane.stratagy.GeneralStratagy#dothis()
+     */
+    @Override
+    public void dothis()
+    {
+        System.out.println("Do this executed");
 
-	}
+    }
 
-	@Override
-	public void dothat() {
-		System.out.println("Do that executed");
+    /*
+     * (non-Javadoc)
+     * 
+     * @see com.amitdusane.stratagy.GeneralStratagy#dothat()
+     */
+    @Override
+    public void dothat()
+    {
+        System.out.println("Do that executed");
 
-	}
+    }
 
-	@Override
-	public void dosomething() {
-		System.out.println("Do something executed");
+    /*
+     * (non-Javadoc)
+     * 
+     * @see com.amitdusane.stratagy.GeneralStratagy#dosomething()
+     */
+    @Override
+    public void dosomething()
+    {
+        System.out.println("Do something executed");
 
-	}
+    }
 
 }

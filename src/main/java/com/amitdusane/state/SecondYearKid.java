@@ -1,10 +1,18 @@
 package com.amitdusane.state;
 
-public class SecondYearKid implements KidState {
+/**
+ * The Class SecondYearKid.
+ */
+public class SecondYearKid implements KidState
+{
 
-	public void eat() {
-		System.out.println("Eats cerelac");
+    /* (non-Javadoc)
+     * @see com.amitdusane.state.KidState#eat()
+     */
+    public void eat()
+    {
+        System.out.println("Eats cerelac");
 
-	}
+    }
 
 }

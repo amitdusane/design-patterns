@@ -5,15 +5,29 @@ import java.util.List;
 
 //Depending on instance execution strategy is decided
 
-public class Demo {
+/**
+ * The Class Demo.
+ */
+public final class Demo
+{
+    private Demo()
+    {
+       
+    }
 
-	public static void main(String[] args) {
-		
-		List<Stratagy> stratagies = Arrays.asList(new General(), new Standard());
-		
-		for (Stratagy stratagy : stratagies) {
-			stratagy.execute();
-		}
-		
-	}
+    /**
+     * The main method.
+     *
+     * @param args the arguments
+     */
+    public static void main(String[] args)
+    {
+
+        List<Strategy> stratagies = Arrays.asList(new General(), new Standard());
+
+        for (Strategy stratagy : stratagies) {
+            stratagy.execute();
+        }
+
+    }
 }

@@ -1,21 +1,34 @@
 package com.amitdusane.adapter;
 
-public class Samsung implements Chargeable2 {
-	
-	String mobileName;
-	
-	public Samsung(String mobileName) {
-		this.mobileName = mobileName;
-	}
+/**
+ * The Class Samsung.
+ */
+public class Samsung implements Chargeable2
+{
 
-	public void setMobileName(String name) {
-		mobileName = name;
+    /** The mobile name. */
+    private String mobileName;
 
-	}
+    /**
+     * Instantiates a new samsung.
+     *
+     * @param mobileName the mobile name
+     */
+    public Samsung(String mobileName)
+    {
+        this.mobileName = mobileName;
+    }
 
-	public void performCharging() {
-		System.out.println("Charging " +  mobileName + " ...");
+    public void setMobileName(String name)
+    {
+        mobileName = name;
 
-	}
+    }
+
+    public void performCharging()
+    {
+        System.out.println("Charging " + mobileName + " ...");
+
+    }
 
 }
